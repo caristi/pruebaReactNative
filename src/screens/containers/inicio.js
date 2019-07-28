@@ -14,7 +14,7 @@ class Inicio extends Component{
       render() {
         return (
           <View>
-            <Text>Estoy en la pagina de Inicio --</Text>
+            <Text>Estoy en la pagina de Inicio con su nombre {this.props.navigation.getParam('text')} </Text>
             <Button title="ir a evento"
             onPress={this.handlePress}/>
           </View>
